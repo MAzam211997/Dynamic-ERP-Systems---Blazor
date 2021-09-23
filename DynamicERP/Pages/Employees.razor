@@ -3,7 +3,7 @@
 @inject EmployeeService employeeService
 
 <NavLink class="nav-link" href="AddEmployee">
-    <span class="oi oi-plus alert alert-success" aria-hidden="true">Create New</span>
+    <span class="oi oi-plus alert alert-success" aria-hidden="true"> Create New</span>
 
 </NavLink>
 
@@ -14,7 +14,7 @@
 }
 else
 {
-    <table class="table">
+    <table class="table table-responsive table-hover">
         <thead>
             <tr>
                 <th>Emp Id</th>
@@ -36,10 +36,10 @@ else
                     <td>@emp.City</td>
                     <td>
                         <a class="nav-link"  href="EditEmployee/@emp.Id">
-                            <span class="oi oi-pencil alert alert-info" aria-hidden="true"></span>
+                            <span class="oi oi-pencil btn btn-info btn-sm" aria-hidden="true"></span>
                         </a>
                         <a class="nav-link" href="Delete/@emp.Id">
-                            <span class="oi oi-trash alert alert-danger" aria-hidden="true"></span>
+                            <span class="oi oi-trash btn btn-danger btn-sm" aria-hidden="true"></span>
                         </a>
                     </td>
                 </tr>
